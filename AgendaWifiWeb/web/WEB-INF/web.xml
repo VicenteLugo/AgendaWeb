@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+    <servlet>
+        <servlet-name>ServletListaPersona</servlet-name>
+        <servlet-class>Servlets.ServletListaPersona</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletConsultar</servlet-name>
+        <servlet-class>Servlets.ServletConsultar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Eliminar</servlet-name>
+        <servlet-class>Servlets.Eliminar</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>ServletActualizar</servlet-name>
+        <servlet-class>Servlets.ServletActualizar</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServletListaPersona</servlet-name>
+        <url-pattern>/ServletListaPersona</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletConsultar</servlet-name>
+        <url-pattern>/ServletConsultar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Eliminar</servlet-name>
+        <url-pattern>/Eliminar</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ServletActualizar</servlet-name>
+        <url-pattern>/ServletActualizar</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
